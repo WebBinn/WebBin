@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -9,11 +10,10 @@
       --bg: #0f172a;
       --card: #111827;
       --primary: #38bdf8;
-      --primary-dark: #2563eb;
-      --text: #e5e7eb;
-      --muted: #cbd5e1;
       --button: #f59e0b;
       --button-dark: #d97706;
+      --text: #e5e7eb;
+      --muted: #cbd5e1;
     }
 
     * {
@@ -48,6 +48,12 @@
       font-size: clamp(2rem, 4vw, 2.8rem);
     }
 
+    .meta {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+
     .joke-box {
       min-height: 180px;
       display: flex;
@@ -67,10 +73,9 @@
       word-wrap: break-word;
     }
 
-    .meta {
-      font-size: 0.9rem;
+    .loading {
       color: var(--muted);
-      margin-bottom: 18px;
+      font-style: italic;
     }
 
     button {
@@ -93,11 +98,6 @@
 
     button:active {
       transform: translateY(0);
-    }
-
-    .loading {
-      color: var(--muted);
-      font-style: italic;
     }
   </style>
 </head>
